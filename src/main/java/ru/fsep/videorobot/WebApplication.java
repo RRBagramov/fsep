@@ -1,8 +1,10 @@
-package com.hellokoding.springboot;
+package ru.fsep.videorobot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
+@ComponentScan("controller")
 @SpringBootApplication
 public class WebApplication {
 

@@ -1,30 +1,40 @@
 package models;
 
 public class Marker {
-    double timeInSec;
-    String comment;
-
-    public Marker(double timeInSec, String comment) {
-        this.timeInSec = timeInSec;
-        this.comment = comment;
-    }
+    private int id;
+    private double startingSecond;
+    private Comment comment;
 
     public Marker() {
     }
 
-    public double getTimeInSec() {
-        return timeInSec;
+    public Marker(int id, double startingSecond, Comment comment) {
+        this.id = id;
+        this.startingSecond = startingSecond;
+        this.comment = comment;
     }
 
-    public void setTimeInSec(double timeInSec) {
-        this.timeInSec = timeInSec;
+    public int getId() {
+        return id;
     }
 
-    public String getComment() {
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public double getStartingSecond() {
+        return startingSecond;
+    }
+
+    public void setStartingSecond(double startingSecond) {
+        this.startingSecond = startingSecond;
+    }
+
+    public Comment getComment() {
         return comment;
     }
 
-    public void setComment(String comment) {
+    public void setComment(Comment comment) {
         this.comment = comment;
     }
 }

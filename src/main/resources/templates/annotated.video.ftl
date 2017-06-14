@@ -37,7 +37,7 @@
         markers: [
         <#list model["markers"]>
             <#items as marker>
-                {time: ${marker.timeInSec}, text: "${marker.comment}"}<#sep>,
+                {time: ${marker.startingSecond}, text: "${marker.comment.text}"}<#sep>,
             </#items>
         </#list>
 
