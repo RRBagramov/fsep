@@ -1,7 +1,7 @@
-package controller;
+package ru.fsep.videorobot.controllers;
 
-import models.Comment;
-import models.Marker;
+import ru.fsep.videorobot.models.Comment;
+import ru.fsep.videorobot.models.Marker;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;

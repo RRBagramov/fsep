@@ -1,4 +1,4 @@
-package models;
+package ru.fsep.videorobot.models;
 
 public class Video {
     private int id;

@@ -1,4 +1,4 @@
-package models;
+package ru.fsep.videorobot.models;
 
 public class Comment {
     private Video video;
