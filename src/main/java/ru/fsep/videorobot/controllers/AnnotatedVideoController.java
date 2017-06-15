@@ -1,17 +1,27 @@
 package ru.fsep.videorobot.controllers;
 
-import ru.fsep.videorobot.models.Comment;
-import ru.fsep.videorobot.models.Marker;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import ru.fsep.videorobot.models.Comment;
+import ru.fsep.videorobot.models.Marker;
 
 import java.util.LinkedList;
 import java.util.List;
 
 @Controller
 public class AnnotatedVideoController {
+
+    @RequestMapping("/login")
+    public String login() {
+        return "login";
+    }
+
+    @RequestMapping("/")
+    public String home() {
+        return "home";
+    }
 
     @RequestMapping("/play")
     public String annotatedVideo(@ModelAttribute("model") ModelMap modelMap) {

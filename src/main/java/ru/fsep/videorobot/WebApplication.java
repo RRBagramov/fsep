@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
-@ComponentScan("ru.fsep.videorobot.controllers")
+@ComponentScan("ru.fsep.videorobot")
 @SpringBootApplication
 public class WebApplication {
 
